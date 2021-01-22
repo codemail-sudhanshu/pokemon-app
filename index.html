@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <title>Pokemon App</title>
+    <style>
+        .animate__backInLeft {
+
+            animation-delay: 3s;
+
+        }
+
+        body {
+            width: 100vw;
+            margin: 0px;
+
+        }
+
+        .logo-name {
+            z-index: 5;
+            top: 0px;
+            position: fixed;
+            font-family: 'Fredoka One', cursive;
+            font-size: 2rem;
+            display: flex;
+            padding: 10px 13px 10px 10px;
+            width: 100vw;
+            box-sizing: border-box;
+            background-color: white;
+            box-shadow: 0px -10px 30px rgba(0, 0, 0, 0.404);
+
+        }
+
+        .main {
+            margin-top: 10vh;
+            font-family: 'Montserrat', sans-serif;
+            width: 100vw;
+            box-sizing: border-box;
+            display: grid;
+            padding: 10px;
+            grid-gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+        .logo {
+            width: 100vw;
+            height: 10px;
+            background-color: blue;
+        }
+
+        .card {
+            transition: all ease 0.5s;
+            overflow: hidden;
+            padding: 10px;
+            box-sizing: border-box;
+            height: 20vh;
+            justify-content: space-between;
+            display: flex;
+            border-radius: 20px;
+            background-color: #4b7c68;
+        }
+
+        .name {
+            padding-left: 10px;
+            font-weight: 700;
+            color: white;
+            text-transform: capitalize;
+            font-size: 1.6rem;
+        }
+
+        .feature {
+            color: white;
+            background-color: rgba(255, 255, 255, 0.226);
+            width: 30vw;
+
+            border-radius: 30px;
+            text-align: center;
+            /* display: bl; */
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .src {
+            width: 30vh;
+            transition: all ease-out 1s;
+            position: relative;
+            left: 20%;
+            height: auto;
+            top: -5%;
+            height: 30vh;
+            opacity: 20%;
+            z-index: 0;
+        }
+
+        .pokemon-img {
+            transition: ease-in 0.5s;
+            height: 18vh;
+            position: absolute;
+            opacity: 100%;
+            right: 8%;
+            z-index: 2;
+        }
+
+        .images {
+            display: flex;
+        }
+
+
+
+
+
+        .open.card {
+            height: 80vh;
+        }
+
+        .open .src {
+
+            transform: scale(1.4);
+        }
+
+        .open .pokemon-img {
+            right: 10%;
+            transform: scale(1.2);
+
+        }
+
+        .open .details {
+
+            left: 50%;
+        }
+
+        .logo-name {
+            /* display: none; */
+        }
+
+        button {
+            width: 20vh;
+            top: 50vh;
+            height: 10vh;
+            z-index: 50;
+            position: absolute;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="all">
+        <div class="logo-name"> PokeApp </div>
+
+
+
+        <div class="main">
+            <div class="card open" id="10">
+                <div class="details">
+                    <div class="name images">caterpie</div>
+                    <div>
+                        <div class="feature">shield-dust</div>
+                        <div class="feature">run-away</div>
+                    </div>
+                </div>
+                <div><img src="https://pokeres.bastionbot.org/images/pokemon/10.png" class="pokemon-img"><img
+                        src="pb.png" class="src"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <script src="pokemon.js"></script>
+</body>
+
+</html>

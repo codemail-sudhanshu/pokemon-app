@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Pokemon App</title>
+    <style>
+        .animate__backInLeft {
+
+            animation-delay: 3s;
+
+        }
+
+        body {
+            width: 100vw;
+            margin: 0px;
+
+        }
+
+        .logo-name {
+            z-index: 5;
+            top: 0px;
+            position: fixed;
+            font-family: 'Fredoka One', cursive;
+            font-size: 2rem;
+            display: flex;
+            padding: 10px 13px 10px 10px;
+            width: 100vw;
+            box-sizing: border-box;
+            background-color: white;
+            box-shadow: 0px -10px 30px rgba(0, 0, 0, 0.404);
+
+        }
+
+        .main {
+            margin-top: 10vh;
+            font-family: 'Montserrat', sans-serif;
+            width: 100vw;
+            box-sizing: border-box;
+            display: grid;
+            padding: 10px;
+            grid-gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+        .logo {
+            width: 100vw;
+            height: 10px;
+            background-color: blue;
+        }
+
+        .card {
+            transition: all ease-in-out 1s;
+            overflow: hidden;
+            padding: 10px;
+            box-sizing: border-box;
+            height: 20vh;
+            justify-content: space-between;
+            display: flex;
+            border-radius: 20px;
+            background-color: #4b7c68;
+        }
+
+        .name {
+            padding-left: 10px;
+            font-weight: 700;
+            color: white;
+            text-transform: capitalize;
+            font-size: 1.6rem;
+        }
+
+        .feature {
+            color: white;
+            background-color: rgba(255, 255, 255, 0.226);
+            width: 30vw;
+
+            border-radius: 30px;
+            text-align: center;
+            /* display: bl; */
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .src {
+            width: 30vh;
+            position: relative;
+            left: 20%;
+            height: auto;
+            top: -5%;
+            height: 30vh;
+            opacity: 20%;
+            z-index: 0;
+        }
+
+        .pokemon-img {
+            transition: ease-in-out 2s;
+            height: 18vh;
+            position: absolute;
+            opacity: 100%;
+            right: 8%;
+            z-index: 2;
+        }
+
+        .images {
+            display: flex;
+        }
+
+
+
+        .open {
+            margin-top: 10vh;
+            width: 100vw;
+        }
+
+        .open .card {
+            height: 95vh;
+        }
+
+        .open .pokemon-img {
+            position: fixed;
+
+        }
+
+        .logo-name {
+            /* display: none; */
+        }
+
+        button {
+            width: 20vh;
+            top: 50vh;
+            height: 10vh;
+            z-index: 50;
+            position: absolute;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="all">
+        <div class="logo-name"> PokeApp </div>
+
+        <!-- <button type="button" id="b"> x</button> -->
+
+        <div class="main">
+            <!-- <div class="card" id="p1">
+                <div class="details">
+                    <div class="name">
+                        My Name
+                    </div>
+                    <div>
+                        <div class="feature"> Posion</div>
+                        <div class="feature"> Busbu</div>
+                    </div>
+                </div>
+                <div class="images">
+                    <img src="1.png" alt="" class="pokemon-img">
+
+                    <img src="pb.png" alt="" class="src">
+
+                </div>
+
+            </div> -->
+
+        </div>
+    </div>
+
+
+
+    <script src="pokemon.js"></script>
+    <script type="module" src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
+</body>
+
+</html>
